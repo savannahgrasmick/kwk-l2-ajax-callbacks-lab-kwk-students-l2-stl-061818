@@ -14,7 +14,7 @@ function searchRepositories(input) {
         url: "https://api.github.com/search/repositories?q=tetris+language:assembly&sort",
         dataType: "json",
         data: {
-            api_key: '',
+            
             q: input,
             
         },
