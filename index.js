@@ -9,9 +9,9 @@ $("#searchRepositories").on("click", function() {
     search(search);
  })
 
-function searchGif(input) {
+function searchRepositories(input) {
     $.ajax({
-        url: "https://api.giphy.com/v1/gifs/search",
+        url: "https://api.github.com/search/repositories?q=tetris+language:assembly&sort",
         dataType: "json",
         data: {
             api_key: '',
