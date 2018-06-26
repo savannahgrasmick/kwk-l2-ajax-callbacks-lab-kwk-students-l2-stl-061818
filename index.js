@@ -6,9 +6,9 @@ function searchRepositories() {
 }
 
 
-$("#submitButton").on("click", function() {
-    let search = $("#searchText").val()
-    searchGif(search);
+$("#searchRepositories").on("click", function() {
+    let search = $("#searchTerms").val()
+    search(search);
  })
 
 function searchGif(input) {
