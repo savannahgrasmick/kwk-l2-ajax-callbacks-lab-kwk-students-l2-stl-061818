@@ -1,9 +1,7 @@
 $(document).ready(function (){
 });
 
-function searchRepositories() {
-  $("#searchTerms").val
-}
+
 
 
 $("#searchRepositories").on("click", function() {
@@ -16,9 +14,8 @@ function searchGif(input) {
         url: "https://api.giphy.com/v1/gifs/search",
         dataType: "json",
         data: {
-            api_key: 'c19b2b7141454239a19fe6d59e8c4af9',
+            api_key: '',
             q: input,
-            limit: 3,
             rating: "PG-13"
         },
         success: resp => {
