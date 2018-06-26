@@ -16,7 +16,7 @@ function searchRepositories(input) {
         data: {
             api_key: '',
             q: input,
-            rating: "PG-13"
+            
         },
         success: resp => {
             url = resp.data["0"].embed_url
