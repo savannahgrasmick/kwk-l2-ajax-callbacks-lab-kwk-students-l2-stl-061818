@@ -20,15 +20,6 @@ function searchRepositories(input) {
         },
         success: resp => {
             url = resp.data["0"].embed_url
-            $("#firstDiv").html(`<iframe src=${url}>`)
-
             
-            url = resp.data["1"].embed_url
-            $("#secondDiv").html(`<iframe src=${url}>`)
-
-                
-            url = resp.data["2"].embed_url
-            $("#thirdDiv").html(`<iframe src=${url}>`)
-        }
     })
 }
